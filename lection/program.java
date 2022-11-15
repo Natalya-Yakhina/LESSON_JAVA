@@ -1,6 +1,4 @@
-package Lesson_JAVA;
-
-
+package lection;
 
 // public class program {
 //     public static void main(String[] args) {
