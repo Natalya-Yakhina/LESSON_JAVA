@@ -21,12 +21,19 @@ public class Zadacha5 {
 
     private static void Repeat(String str, int num){ // не получилось сделать вывод строк с абзаца :(
 
-        if(num > 0){
-        String result = str.repeat(num);
-        System.out.println(result + " ");
-        }
-        else {
-            System.out.print("ОШИБКА!"); 
+        // if(num > 0){
+        // String result = str.repeat(num);
+        // System.out.println(result + " ");
+        // }
+        // else {
+        //     System.out.print("ОШИБКА!"); 
+        // }
+        
+        for (int i = 1; i <= num; i++) {
+            System.out.println(str);
         }
     }
 }
+
+
+   
