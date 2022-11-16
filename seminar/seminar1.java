@@ -71,32 +71,32 @@ package seminar;
 // что сумма элементов с индексами < i равна сумме элементов с индексами > i.
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-public class seminar1 {
-    public static void main(String[] args) {
+// public class seminar1 {
+//     public static void main(String[] args) {
 
-    int[] numbers = {1, 7, 3, 6, 5, 6};
-    int median = findMedian(numbers);
-    System.out.println(median);
+//     int[] numbers = {1, 7, 3, 6, 5, 6};
+//     int median = findMedian(numbers);
+//     System.out.println(median);
 
-    }
+//     }
     
-    private static int findMedian(int[] numbers) {
-        // [a1, a2, a3, a4, a5, a6, a7]
-    // Найти такой index, что сумма слева и справа равны
-    int left = 0; // значение слева = 0
-        for(int i = 1; i < numbers.length; i++) {
-            left += numbers[i-1];
+//     private static int findMedian(int[] numbers) {
+//         // [a1, a2, a3, a4, a5, a6, a7]
+//     // Найти такой index, что сумма слева и справа равны
+//     int left = 0; // значение слева = 0
+//         for(int i = 1; i < numbers.length; i++) {
+//             left += numbers[i-1];
 
-        int rigth = 0; // значение справа, каждый раз плюсует 
-         // i + 1, i + 2, ... number.length - 1
-        for (int j = i+1; j < numbers.length; j++) {
-         rigth +=  numbers[j];
-        }
+//         int rigth = 0; // значение справа, каждый раз плюсует 
+//          // i + 1, i + 2, ... number.length - 1
+//         for (int j = i+1; j < numbers.length; j++) {
+//          rigth +=  numbers[j];
+//         }
 
-        if (left == rigth){
-            return i;
-        }
-    }
-    return -1;
-    }
-}
+//         if (left == rigth){
+//             return i;
+//         }
+//     }
+//     return -1;
+//     }
+// }
