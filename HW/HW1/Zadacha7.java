@@ -15,6 +15,7 @@ public class Zadacha7 {
     }   
 
     private static void method(int[]array) {
+
         for (int i = 0; i < array.length; i++) {
             if(array[i] == 1){
                 array[i] = 0;
@@ -23,6 +24,7 @@ public class Zadacha7 {
                 array[i] = 1;
             }
         }
+        
         System.out.print(Arrays.toString(array)); //возвращает строковое представление массива, разделяя элементы запятой. 
                                                   // вместо того чтобы перебирать массивы циклом for, можно воспользоваться этим методом для вывода элементов на консоль:
     }
