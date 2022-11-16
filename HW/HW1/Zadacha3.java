@@ -16,7 +16,7 @@ public class Zadacha3 {
         doVerify(num);
     }
     
-    static void doVerify(int num) {
+    private static void doVerify(int num) {
         if (num >= 0){
             System.out.println("Число " + num + " = положительное");
         }
