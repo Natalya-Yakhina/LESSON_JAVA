@@ -1,5 +1,5 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// Напишите метод, который принимает на вход строку (String) 
+// 1. Напишите метод, который принимает на вход строку (String) 
 // и определяет является ли строка палиндромом (возвращает boolean значение).
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -14,12 +14,12 @@ public class Zadacha {
         System.out.println("Введите значения строки: ");
         String sourse = iScanner.nextLine();
         System.out.println(isPalindrome(sourse));
-        // System.out.println(isPalindrome("0110"));
+        // System.out.println(isPalindrome("0156510"));
     }
     private static boolean isPalindrome(String sourse){
 
-        return sourse.equalsIgnoreCase(new StringBuffer(sourse).reverse().toString());  // new StringBuffer(sourse).reverse().toString()- формируем инвертированную строку, 
-                                                                                        // с помощью метода equalsIgnoreCase - сверяем её с изначальной строкой, игнорируя регистр букв.
+        return sourse.equalsIgnoreCase(new StringBuffer(sourse).reverse().toString());  // new StringBuffer(sourse).reverse().toString()- формирует инвертированную строку, 
+                                                                                        // с помощью метода equalsIgnoreCase - сверяет её с изначальной строкой.
     }
 }
     // -------------- 2 -------------------
@@ -33,5 +33,3 @@ public class Zadacha {
 //         return true;
 //     }
 // }
-
-
