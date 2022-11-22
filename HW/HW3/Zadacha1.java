@@ -11,7 +11,7 @@ public class Zadacha1 {
     public static void main(String[] args) {    
         ArrayList <Integer> list = new ArrayList<Integer>();
         Collections.addAll(list, 1, 2, 4, 8, 16, 3, 13, 21, 25, 76);
-        System.out.printf("Исходный массив: \n" + list);
+        System.out.printf("Исходный список: \n" + list);
         
         // ---------------------- 1 -------------------------
 
