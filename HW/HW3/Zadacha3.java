@@ -7,7 +7,7 @@
 
 package HW.HW3;
 
-public class Zaddacha3 {
+public class Zadacha3 {
     
 }
 
