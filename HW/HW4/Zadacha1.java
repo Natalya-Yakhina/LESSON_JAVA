@@ -5,7 +5,7 @@
 package HW.HW4;
 
 import java.util.LinkedList;
-import java.util.List;
+// import java.util.List;
 
 public class Zadacha1 {
 
@@ -27,6 +27,7 @@ public class Zadacha1 {
         System.out.println("Перевернутый : " + list);
     }
 }
+// ============================= 2 ===========================
 // public class Zadacha1 {
 //     public static void main(String[] args) {
 //         List<Integer> list = new LinkedList<Integer>();
