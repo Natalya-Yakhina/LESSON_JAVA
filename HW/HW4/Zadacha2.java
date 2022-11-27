@@ -19,6 +19,27 @@ import java.util.LinkedList;
 import java.util.Scanner;
 
 public class Zadacha2 {
+    public static void main(String[] args) {
+        LinkedList<String> list = new LinkedList<String>();
+        Scanner iScanner = new Scanner(System.in);
+
+    while(true){
+        System.out.print("Введите строку в формате: text~num --> ");
+        String input = iScanner.nextLine();
+        if(input.equals("-1")){ // если ввод -1, то выход
+            break;
+        }
+
+        int idx = input.lastIndexOf("~");
+        if(input.isEmpty() || idx == -1){ // если отсутствует значение ~,
+            throw new RuntimeException("Ошибка ввода, нет знака'~'!"); // то сгенерировать (throw new) исключение
+        }
+    }
+
+    
+        
+}
+}
     //     public static void main(String[] args) {
             
     //         LinkedList<String> ll = new LinkedList<String>();
@@ -81,32 +102,32 @@ public class Zadacha2 {
 //     }
 // }
 // -------------------------------------------------------------
-public static void main(String[] args) {
-    LinkedList<String> list = new LinkedList<>();
-    Scanner scanner = new Scanner(System.in);
-    boolean exit = false;
-    while(!exit) {
-        String[] input = scanner.nextLine().split("~");
-        String text = input[0];
-        if(text.equalsIgnoreCase("exit")) {
-            exit = true;
-            continue;
-        }
-        int num = Integer.parseInt(input[1]);
-        if(text.equalsIgnoreCase("print")) {
-            if(num<list.size()) {
-                System.out.println(list.get(num));
-                list.remove(num);
-            }
-            else
-                System.out.println("Не допустимый индекс");
-            continue;
-        }
-        while((list.size()-1)<num)
-            list.add("");
-        list.set(num, text);
+// public static void main(String[] args) {
+//     LinkedList<String> list = new LinkedList<>();
+//     Scanner scanner = new Scanner(System.in);
+//     boolean exit = false;
+//     while(!exit) {
+//         String[] input = scanner.nextLine().split("~");
+//         String text = input[0];
+//         if(text.equalsIgnoreCase("exit")) {
+//             exit = true;
+//             continue;
+//         }
+//         int num = Integer.parseInt(input[1]);
+//         if(text.equalsIgnoreCase("print")) {
+//             if(num<list.size()) {
+//                 System.out.println(list.get(num));
+//                 list.remove(num);
+//             }
+//             else
+//                 System.out.println("Не допустимый индекс");
+//             continue;
+//         }
+//         while((list.size()-1)<num)
+//             list.add("");
+//         list.set(num, text);
 
-        System.out.println(list);
-    }
-}
-}
+//         System.out.println(list);
+//     }
+// }
+// }
