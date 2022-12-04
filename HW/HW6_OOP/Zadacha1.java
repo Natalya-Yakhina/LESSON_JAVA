@@ -19,6 +19,12 @@ public class Zadacha1{
         return choice;
     }
 
+    public static void result(Map<String, Notebook> result){ // метод вывода результата
+        for (var notebook : result.entrySet()) {
+            System.out.printf("%s\n%s\n\n", notebook.getKey(), notebook.getValue().toString()); // ключ, значение 
+        }
+    }
+
     public static void main(String[] args) {
         Scanner iScanner = new Scanner(System.in);
 
@@ -27,10 +33,10 @@ public class Zadacha1{
 
         Set<Notebook> notebooks = new HashSet<>(); // коллекция с ноутбуками
         
-        Notebook notebook1 = new Notebook("DDR3", "HDD", "Linux", "black");
-        Notebook notebook2 = new Notebook("DDR", "SDD", "Windows", "orange");
-        Notebook notebook3 = new Notebook("DDR4", "SDD", "macOs", "red");
-        Notebook notebook4 = new Notebook("DDR4", "SDD", "macOs", "green");
+        Notebook notebook1 = new Notebook("DDR3", "2 Tb", "Linux", "black");
+        Notebook notebook2 = new Notebook("DDR", "4 Tb", "Windows", "orange");
+        Notebook notebook3 = new Notebook("DDR4", "4 Tb", "macOs", "red");
+        Notebook notebook4 = new Notebook("DDR4", "1 Tb", "macOs", "green");
         notebooks.add(notebook1);
         notebooks.add(notebook2);
         notebooks.add(notebook3);
@@ -82,12 +88,6 @@ public class Zadacha1{
             }
         }
         iScanner.close();
-    }
-
-    public static void result(Map<String, Notebook> result){ // метод вывода результата
-        for (var notebook : result.entrySet()) {
-            System.out.printf("%s\n%s\n\n", notebook.getKey(), notebook.getValue().toString()); // ключ, значение 
-        }
     }
 }
 
