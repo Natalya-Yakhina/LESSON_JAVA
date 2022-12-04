@@ -20,7 +20,7 @@ public class Notebook {
         int count = 1;
         for(Notebook notebook : notebooks){
             if(notebook.operMemory.contains(input)){
-                result.put(String.format("Ноутбук № %d", count), notebook);
+                result.put(String.format("Результат поиска - ноутбук № %d", count), notebook);
                 count++;
             }
         }
@@ -30,7 +30,7 @@ public class Notebook {
         int count = 1;
         for(Notebook notebook : notebooks){
             if(notebook.hdd.contains(input)){
-                result.put(String.format("Ноутбук № %d", count), notebook);
+                result.put(String.format("Результат поиска - ноутбук № %d", count), notebook);
                 count++;
             }
         }  
@@ -40,7 +40,7 @@ public class Notebook {
         int count = 1;
         for(Notebook notebook : notebooks){
             if(notebook.operatingSystem.contains(input)){
-                result.put(String.format("Ноутбук № %d", count), notebook);
+                result.put(String.format("Результат поиска - ноутбук № %d", count), notebook);
                 count++;
             }
         } 
@@ -50,7 +50,7 @@ public class Notebook {
         Integer count = 1;
         for(Notebook notebook : notebooks){
             if(notebook.colors.contains(input)){
-                result.put(String.format("Ноутбук № %d", count), notebook);
+                result.put(String.format("Результат поиска - ноутбук № %d", count), notebook);
                 count++;
             }
         } 
@@ -58,6 +58,6 @@ public class Notebook {
 
     @Override
     public String toString() {
-        return String.format("Характеристики: %s\nОЗУ: %s\nHDD: %s\nОперационная система: %s\nЦвет: %s", operMemory, hdd, operatingSystem, colors);
+        return String.format("ОЗУ: %s\nHDD: %s\nОперационная система: %s\nЦвет: %s", operMemory, hdd, operatingSystem, colors);
     }
 }
